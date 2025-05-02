@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="logo">HealthCare</a>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="welcome.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="glass-form">
+            <h2>Upcoming Appointment</h2>
+            <div id="appointment">
+                <!-- Appointments loaded via JavaScript/PHP -->
+                <div class="appointment-card">
+                    <p><strong>Dr. Mugarura Dickens</strong> (Cardiology)</p>
+                    <p>Date: 25 Oct 2025, 10:30 AM</p>
+                    <button class="cancel-btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-form">
+            <h2>Profile Settings</h2>
+            <form action="update_profile.php" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
